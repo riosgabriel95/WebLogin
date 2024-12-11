@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: scale(1.05);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.input-container i {
+    color: #aaa;
+    font-size: 18px; /* Ajuste o tamanho do ícone conforme necessário */
+    margin-right: 10px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    height: 40px; /* Certifique-se de que a altura do input seja suficiente para centralizar o ícone */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    transition: opacity 0.3s ease;
+}
+/* Botões adicionais de Cadastro e Voltar */
+button[type="button"] {
+    margin-top: 10px;
+    background-color: #6c757d;
+    color: white;
+    font-size: 14px;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Ocultar o formulário não ativo */
+.hidden {
+    display: none;
+}
